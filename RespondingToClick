@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Javascript</title>
+  </head>
+  <body>
+    <p id="text"> Hello World!</p>
+    <button id="button">Change text </button>
+    <script type="text/Javascript">
+      document.getElementById("button").onclick = function(){
+        alert('button clicked');
+        document.getElementById("text").innerHTML = "Button Was clicked";
+      }
+    </script>
+  </body>
+</html>
