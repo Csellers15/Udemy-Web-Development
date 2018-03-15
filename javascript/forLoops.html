@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Javascript</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+
+  <body>
+    <div id="daysDiv"> </div>
+
+    <script type="text/Javascript">
+      var daysString = "";
+      var days = ['monday', 'tuesday', 'wednesday', 'thursday'];
+      for(var i = 0; i < days.length; i++)
+       daysString += '<p>' + days[i] + '</p>'
+      document.getElementById('daysDiv').innerHTML = daysString;
+    </script>
+  </body>
+</html>
