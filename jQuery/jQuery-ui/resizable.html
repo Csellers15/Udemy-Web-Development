@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>JQuery</title>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <link href="Jquery-ui/jquery-ui.css" rel="stylesheet">
+
+        <style type="text/css">
+        #resizable{
+          width: 100px;
+          height: 100px;
+          background-color: blue;
+        }
+
+        #also{
+          width: 100px;
+          height: 100px;
+          background-color: yellow;
+        }
+
+        </style>
+    </head>
+    <body>
+      <div id="resizable"></div>
+      <div id="also"></div>
+      <script type="text/javascript">
+        $('#resizable').resizable({
+          grid:50,
+          alsoResize: '#also',
+          resize: function(event, ui){
+            if($('#resizable').width() > 300)
+              alert('big enough');
+          }
+        });
+        $('#also').resizable();
+      </script>
+    </body>
+</html>
